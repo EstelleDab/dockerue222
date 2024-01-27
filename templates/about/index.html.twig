@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}... AboutController!{% endblock %}
+
+{% block body %}
+<style>
+   .example-wrapper {border: 2px solid black; background: #212529 ; margin: auto; max-width: 40rem; width: 80%; font: 18px/1.5 sans-serif; }
+    .example-wrapper-code {padding: 2rem 2rem; }
+</style>
+
+<div class="mt-5 text-white example-wrapper-code example-wrapper rounded-pill row justify-content-center">
+    <h1>Hello I'm {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/app/src/Controller/AboutController.php'|file_link(0) }}">src/Controller/AboutController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/app/templates/about/index.html.twig'|file_link(0) }}">templates/about/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}
