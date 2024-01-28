@@ -4,17 +4,19 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper {border: 2px solid black; background: #212529 ; margin: auto; max-width: 40rem; width: 80%; font: 18px/1.5 sans-serif; }
+    .example-wrapper-code {padding: 2rem 2rem; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/ue235/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/ue235/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
-    </ul>
+<div class="mt-5 text-white example-wrapper-code example-wrapper rounded-pill row justify-content-center">
+    <div >
+    <h1 class="mx-6">Hello {{ controller_name }}! ✅</h1>
+    </div>
+    <div >
+    <p>This friendly message is coming from:</p>
+    </div>
+    <div >
+        <p>One of your brilliant and modest <a class="text-warning" href={{path('app_about')}}> student </a>Discover her<a class="text-warning" href={{path('article_index')}}> stunning articles here</a></p>
+    </div>
 </div>
 {% endblock %}
